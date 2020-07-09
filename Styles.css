@@ -93,6 +93,7 @@ div#wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    color: rgb(227, 223, 241);
 
 }
 .card:hover{
@@ -133,3 +134,47 @@ div#wrapper{
     margin: 10px;
     text-align: center;
   }
+
+
+  /*=== Modal === */
+
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 7);
+    width: 100;
+    height: 100;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden ;
+  }
+
+  .modal{
+      background-color: white;
+      width: 90;
+      height: 90;
+      margin: 5vh auto;
+      position: relative;
+  }
+
+  .modal .close-modal{
+    color: black;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+
+  /*=== Modal.Active === */
+ 
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height:90%;
+    position: absolute;
+    top: 5%;
+
+}
